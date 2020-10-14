@@ -10,6 +10,20 @@
     }
 }
 
+@keyframes right {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
 .animate-up {
     animation: up 300ms backwards;
+}
+
+.animate-right {
+    animation: right 700ms;
 }

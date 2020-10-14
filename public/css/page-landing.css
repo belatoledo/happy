@@ -1,5 +1,5 @@
 #page-landing {
-    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+    background: linear-gradient(329.54deg, #29b5d1be 0%, #00c7c7 100%);
   
     min-height: 100vh;
     text-align: center;
@@ -7,10 +7,31 @@
     display: flex;
   }
   
-  #container {
+#container {
     margin: auto;
-    width: 90%;
+    width: min(90%, 112rem); /*poderia ser 1120px, mas rem deixa flexível*/
   }
+
+  /*animations delays */
+#logo {
+  animation-delay: 50ms;
+}
+
+.location {
+  animation-delay: 100ms;
+}
+
+main h1 {
+  animation-delay: 150ms;
+}
+
+.visit p {
+  animation-delay: 200ms;
+} 
+
+.visit a {
+  animation-delay: 250ms;
+}
   
   .location,
   h1,
@@ -39,23 +60,57 @@
       background: #96feff;
   }
 
-/*animations delays */
-#logo {
-    animation-delay: 50ms;
-}
+/*versao desktop*/
+@media (min-width: 760px) {
 
-.location {
-    animation-delay: 100ms;
-}
+    #container {
+      padding: 5rem 2rem;
+      background: url("../images/bg.svg") no-repeat 60% / clamp(28rem, 54vw, 48rem);
+    }
 
-main h1 {
-    animation-delay: 150ms;
-}
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-.visit p {
-    animation-delay: 200ms;
-} 
+    .location,
+    h1,
+    .visit p {
+    height: initial;
+    text-align: initial;
+  }
 
-.visit a {
-    animation-delay: 250ms;
+    .location {
+    text-align: right;
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+
+    main h1 {
+      font-size: clamp(4rem, 8vh, 8.4rem); /*min / vr que eu quero / max*/
+      font-weight: bold;
+      line-height: .88;
+
+      margin: clamp(10%, 9vh, 12%) 0 4rem;
+
+      width: min(300px, 80%);
+  }
+
+  .visit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .visit p {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    width: clamp(20rem, 20vw, 30rem);
+  }
+
+  .visit a {
+    margin: initial;
+  }
+
 }
