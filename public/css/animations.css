@@ -20,6 +20,20 @@
     }
 }
 
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-appear {
+    animation: appear 700ms backwards;
+}
+
 .animate-up {
     animation: up 300ms backwards;
 }
