@@ -3,42 +3,6 @@
     min-height: 100vh;
 }
 
-aside.sidebar {
-    position: fixed;
-    height: 100%;
-    padding: 3.2rem 2.4rem;
-    background: #15c3d6;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-aside.sidebar footer button {
-    width: 48px;
-    height: 48px;
-    border: none;
-    background: #12afcb;
-    border-radius: 1.6rem;
-    cursor: pointer;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transition: background-color .2s;
-}
-
-aside.sidebar footer button:hover {
-
-    background: #17d6eb;
-}
-
-.with-sidebar {
-    padding-left: 110px;
-}
-
 main {
     flex: 1;
 }
@@ -85,6 +49,8 @@ main {
 .images button:hover,
 .images button.active {
     opacity: 1;
+    border: 2px solid #37c77f;
+    
 }
 
 .images button img {
@@ -95,7 +61,8 @@ main {
 
 /*orphanage-detailscontent*/
 .orphanage-details-content {
-    padding: 2.4rem 6rem 2.4rem;
+    padding: 2.4rem 8rem 2.4rem;
+    margin: 2rem;
 }
 
 .orphanage-details-content h1 {
@@ -111,34 +78,6 @@ main {
     color: #5e676b;
     margin-top: 4rem;
     text-align: center;
-}
-
-/*map-container*/
-.map-container {
-    margin-top: 6.4rem;
-    background: #e6f7fb;
-    border: 1px solid #b3dae2;
-    border-radius: 2rem;
-}
-
-#mapid {
-    width: 100%;
-    height: 28rem;
-}
-
-.map-container footer {
-    padding: 2rem 0;
-    text-align: center;
-}
-
-.map-container footer a {
-    color: #0089a5;
-    text-decoration: none;
-}
-
-.map-container .leaflet-container {
-    border-bottom: 1px solid #dde3f0;
-    border-radius: 2rem;
 }
 
 .orphanage-details-content hr {
@@ -190,28 +129,4 @@ main {
     font-weight: 600;
     text-align: center;
     line-height: 1.2;
-}
-
-.primary-button {
-    margin: 6.4rem auto;
-    width: 85%;
-    height: 6.4rem;
-    border: none;
-    cursor: pointer;
-    background: #3cdc8c;
-    border-radius: 2rem;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transition: background-color .2s;
-}
-
-.primary-button:hover {
-    background: #36cf82;
-}
-
-.primary-button img {
-    margin-right: 1.6rem;
 }
