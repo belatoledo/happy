@@ -92,8 +92,8 @@ function toggleSelect(event) {
     //atualizar o meu input hidden com o valor selecionado
     const input = document.querySelector('[name="open_on_weekends"]')
     
-    input.value = button.dataset.value
-    
+    input.value = button.dataset.value;  
 }
+
 
 
