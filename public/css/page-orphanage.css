@@ -50,6 +50,7 @@ main {
 .images button.active {
     opacity: 1;
     border: 2px solid #37c77f;
+    outline: none;
     
 }
 
@@ -99,6 +100,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
+    line-height: 1.2;
 }
 
 .open-details div {
@@ -118,15 +120,23 @@ main {
     color: #5c8599;
     font-weight: 600;
     text-align: center;
-    line-height: 1.2;
 }
 
 .open-details .open-on-weekends {
+    border-radius: 20px;
+    font-weight: 600;
+    text-align: center;  
+}
+
+.open-on-weekends.open {
     background: linear-gradient(154.16deg, #EDFFF6 7.85%, #FFFFFF 91.03%);
     border: 1px solid #A1E9E5;
-    border-radius: 20px;
     color: #37c77f;
-    font-weight: 600;
-    text-align: center;
-    line-height: 1.2;
 }
+
+.open-on-weekends.closed {
+    background: linear-gradient(154.16deg, #FCF0F4 7.85%, #FFFFFF 91.03%);
+    border: 1px solid #FFBCD4;
+    color: #FF669D;
+}
+

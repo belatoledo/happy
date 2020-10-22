@@ -12,6 +12,8 @@
     align-items: center;
 
     transition: background-color .2s;
+
+    text-decoration: none;
 }
 
 .primary-button:hover {
@@ -44,6 +46,7 @@
 .button-select button.active {
     background: #edfff6;
     border: 1px solid #37c77f;
+    
 }
 
 .button-select button:first-child {
