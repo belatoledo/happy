@@ -81,9 +81,7 @@ function toggleSelect(event) {
  
     //retirar a classe .active dos botoes
     document.querySelectorAll('.button-select button')
-    .forEach( function(button)  {
-        button.classList.remove('active')
-    })
+    .forEach((button) => button.classList.remove ('active'));
 
     //colocar a classe .active no botao clicado
     const button = event.currentTarget
